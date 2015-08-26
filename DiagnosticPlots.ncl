@@ -403,7 +403,7 @@ load "$NCARG_ROOT/lib/ncarg/nclscripts/csm/gsn_csm.ncl"
   ;---- Absolute Velocity (Top Layer)   
      plot6 = new(3,graphic)
  
-     g = addfile("Joughin-GIS-InSAR-Vels-2015-1km.nc","r")
+     g = addfile("data/Joughin-GIS-InSAR-Vels-2015-1km.nc","r")
      vx = g->vx(nt,:,:)   
      vy = g->vy(nt,:,:)
      Velm := ((vx^2) + (vy^2))^0.5
